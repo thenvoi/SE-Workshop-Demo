@@ -106,6 +106,8 @@ The two agents share a single key.
 Sign up at <https://app.thenvoi.com/> (band.ai's current host). You'll create
 the two agents in the platform UI in Part 3.
 
+![band.ai Register page with email, password, and name fields](docs/screenshots/05-register-page.png)
+
 ---
 
 # Part 2 — Clone and install
@@ -213,7 +215,12 @@ In the band.ai UI:
 2. Add the **Personal Assistant** to it.
 3. Send a message like:
 
-   > *What should I wear in Tokyo today?*
+   > *@Personal Assistant What should I wear in Tokyo today?*
+
+Right before you hit send, your chat should look like this — Personal
+Assistant in the Participants panel, your question in the input:
+
+![Chat with Personal Assistant added and the Tokyo question typed but not yet sent](docs/screenshots/04-chat-message.png)
 
 Expected behavior: the personal assistant looks for a peer that can give
 real-time weather, finds none, and tells you it can't get current weather
