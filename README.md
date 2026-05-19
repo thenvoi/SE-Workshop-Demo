@@ -154,8 +154,10 @@ You'll land on the agent setup form:
 Fill in:
 
 - **Agent Name:** `Personal Assistant`
-- **Description:** *(paste the 297-char text from the appendix at the bottom
-  of this README)*
+- **Description** (copy/paste this exactly):
+  ```
+  General-purpose conversational assistant powered by Claude. Use for open-ended questions, explanations, brainstorming, writing help, summarization, planning, and quick research that doesn't need specialized tools or external data. Good default pick when no domain-specialist peer fits the request.
+  ```
 - **Handle:** auto-suggested from the name — leave it.
 - **Tags:** optional, can leave empty.
 
@@ -229,8 +231,10 @@ In the band.ai web UI, repeat the same flow from Step 1:
 1. **Agents → Connect Remote Agent.**
 2. Fill in:
    - **Agent Name:** `Weather Agent`
-   - **Description:** *(paste the 412-char weather description from the
-     appendix at the bottom of this README)*
+   - **Description** (copy/paste this exactly):
+     ```
+     Reports current weather conditions for any city worldwide: temperature, humidity, wind speed, and sky/precipitation state (clear, cloudy, rain, snow, thunderstorm). Backed by the Open-Meteo API, no API key needed. Add when a user asks about weather in a place or needs conditions to plan an outdoor activity. Limitations: real-time current conditions only — no multi-day forecasts, no historical or climate data.
+     ```
 3. Checkboxes: **Personal Registry Access ON**, **List in public directory
    OFF** — same as before.
 4. Click **Connect Remote Agent**, then copy the `agent_id` and API key from
@@ -355,21 +359,3 @@ question anyway.** Likely you started the weather agent first, or it's still
 running from a previous demo. Quit it (Ctrl-C in its terminal), refresh the
 band.ai directory, and re-ask in the chat.
 
----
-
-# Appendix: platform agent descriptions
-
-Paste these into the band.ai UI when you create each agent. Both fit under
-the 500-character limit.
-
-### Personal Assistant — 297 chars
-
-```
-General-purpose conversational assistant powered by Claude. Use for open-ended questions, explanations, brainstorming, writing help, summarization, planning, and quick research that doesn't need specialized tools or external data. Good default pick when no domain-specialist peer fits the request.
-```
-
-### Weather Agent — 412 chars
-
-```
-Reports current weather conditions for any city worldwide: temperature, humidity, wind speed, and sky/precipitation state (clear, cloudy, rain, snow, thunderstorm). Backed by the Open-Meteo API, no API key needed. Add when a user asks about weather in a place or needs conditions to plan an outdoor activity. Limitations: real-time current conditions only — no multi-day forecasts, no historical or climate data.
-```
