@@ -1,0 +1,11 @@
+# Per-agent credentials issued by the band.ai platform.
+# Copy this file to agent_config.yaml and fill in the agent_id / api_key
+# values for each agent you create in the platform UI.
+
+personal_assistant:
+  agent_id: ""
+  api_key: ""
+
+weather_agent:
+  agent_id: ""
+  api_key: ""
