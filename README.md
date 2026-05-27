@@ -103,8 +103,8 @@ The two agents share a single key.
 
 ## 1.5 Get a band.ai account
 
-Sign up at <https://app.thenvoi.com/> (band.ai's current host). You'll create
-the two agents in the platform UI in Part 3.
+Sign up at <https://app.band.ai/>. You'll create the two agents in the
+platform UI in Part 3.
 
 ![band.ai Register page with email, password, and name fields](docs/screenshots/05-register-page.png)
 
