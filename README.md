@@ -124,15 +124,20 @@ uv sync
 This pulls `thenvoi-sdk` from GitHub plus LangGraph, langchain-anthropic,
 httpx, etc. First run takes a minute; subsequent runs are instant.
 
-Configure your keys:
+Copy both config templates locally — `.env` for keys, `agent_config.yaml` for
+the agent credentials you'll collect in Part 3:
 
 ```bash
 cp .env.example .env
-# Open .env in any editor and paste your Anthropic API key.
+cp agent_config.yaml.example agent_config.yaml
+
+# Open .env and paste your Anthropic API key
+$EDITOR .env
 ```
 
 `.env` already has the correct platform URLs filled in — you only need to add
-the Anthropic key.
+the Anthropic key. `agent_config.yaml` stays empty for now; you'll paste each
+agent's ID and API key into it as you create them in Part 3.
 
 ---
 
@@ -181,15 +186,9 @@ API Key, and Handle:
 > Once"* and means it — once you close this dialog you can't see the key
 > again. (If you lose it, just delete the agent and recreate it.)
 
-Now wire the credentials into the local config:
-
-```bash
-cp agent_config.yaml.example agent_config.yaml
-```
-
-Open `agent_config.yaml` and paste the values under `personal_assistant:`.
-Leave the `weather_agent:` block empty for now — we'll fill it in later
-*on purpose*.
+Open `agent_config.yaml` (already copied in Part 2) and paste the ID and API
+key under `personal_assistant:`. Leave the `weather_agent:` block empty for
+now — we'll fill it in later *on purpose*.
 
 ## Step 2 — Run the personal assistant
 
