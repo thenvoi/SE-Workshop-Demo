@@ -8,6 +8,3 @@
 >
 > This move is part of the platform's rebrand from **thenvoi** to **band.ai**. The code here still works but imports from the legacy `thenvoi-sdk` package — the new repo uses `band-sdk`, the canonical successor. Last commit on this repo (`e22a4bc`) is frozen at the pre-migration state.
 
----
-
-# band.ai Workshop: Dynamic Peer Discovery
